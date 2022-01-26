@@ -2,8 +2,8 @@
   "env": {
     "browser": true,
     "es6": true
-  }, // 활성화하고싶은 환경을 설정 현재 브라우저, es6 환경이 활성화.
-  "parser": "@typescript-eslint/parser", // 보통 Espree, Babel-ESLint, @typescript-eslint/parser 을 사용하는 것 같.
+  }, 
+  "parser": "@typescript-eslint/parser", 
   "extends": [
     "airbnb",
     "eslint:recommended",
@@ -12,15 +12,15 @@
     "plugin:import/warnings",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended"
-  ], // prettier 쓰려면 넣어줘야 함. Airbnb 설정도 여기에.
+  ],
   "settings": {
     "react": {
       "version": "detect"
     },
     "import/resolver": {
-      "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] } // 파일 확장자 ts, tsx 추가
+      "node": { "extensions": [".js", ".jsx", ".ts", ".tsx"] } 
     },
-    "import/extensions": [".js", ".mjs", ".jsx", "ts", "tsx"] // 파일 확장자 ts, tsx 추가
+    "import/extensions": [".js", ".mjs", ".jsx", "ts", "tsx"] 
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -31,7 +31,7 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-    "react/react-in-jsx-scope": 0, // 최상단에 import React from 'react' 안해도 오류 안나
+    "react/react-in-jsx-scope": 0, // 최상단에 import React from 'react' 제거
     "no-nested-ternary": 0, // ternary expression(A ? B : C) 사용하면 에러 뜨는 것 끔.
     "react/prefer-stateless-function": 0, // prettier 관련 설정
     "react/jsx-one-expression-per-line": 0, // prettier 관련 설정
@@ -51,17 +51,13 @@
       }
     ],
     "no-use-before-define": 0,
-    "react/jsx-props-no-spreading": 0, // 컴포넌트가 spread 문법으로 props 받을 수 있게 설정
-    "import/no-extraneous-dependencies": 0, // 개발 환경 설정 파일에서 devDependency 사용을 허용
+    "react/jsx-props-no-spreading": 0, 
+    "import/no-extraneous-dependencies": 0, 
     "@typescript-eslint/no-use-before-define": ["error"],
-    // https://typescript-eslint-armano.netlify.app/rules/no-use-before-define/ 참고
     "no-shadow": 0,
     "react/prop-types": 0,
-    // 추가로 더 필요한 게 있으면 https://eslint.org/docs/user-guide/configuring#specifying-environments 여기서 하면
     "no-return-await": 0,
-    // e.g: return await ... 가 가능하도록 함 -> 이 설정을 해주지 않을 시 const response = await ....     return response 로 해주어야 한다
     "import/prefer-default-export": "off"
-    // default 의무화 차단
   },
   "globals": {
     "React": "writable"
