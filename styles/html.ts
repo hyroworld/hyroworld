@@ -5,7 +5,13 @@ import { BLACK, WHITE } from "./colors";
 export const PADDING = {
   SM: "0.8rem",
   MD: "1.2rem",
-  LG: "2rem",
+  LG: "1.6rem",
+};
+
+export const MARGIN = {
+  SM: "1rem",
+  MD: "2rem",
+  LG: "4rem",
 };
 
 // Typo
@@ -43,7 +49,7 @@ export const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: ${PADDING.SM} ${PADDING.SM};
+  padding: ${PADDING.MD};
 `;
 
 export const Footer = styled.footer`
@@ -64,9 +70,10 @@ export const Article = styled.article`
 `;
 
 export const ALink = styled.a`
+  display: inline-block;
   font-size: ${FONT_SIZE.H5};
   font-weight: ${FONT_WEIGHT.BOLD};
-  padding: 0.5rem 0.8rem;
+  padding: 0.2rem 0.4rem;
   color: ${BLACK};
   background-color: ${WHITE};
   text-decoration: none;
@@ -90,10 +97,27 @@ export const Code = styled.code`
 
 export const P = styled.p`
   font-size: ${FONT_SIZE.H5};
+  line-height: 1.5;
+`;
+
+export const DL = styled.dl``;
+
+export const DT = styled.dt`
+  font-size: ${FONT_SIZE.H3};
+  font-weight: ${FONT_WEIGHT.BOLD};
+  line-height: 1.5;
+`;
+
+export const DD = styled.dd`
+  font-size: ${FONT_SIZE.H5};
+  margin-bottom: ${MARGIN.SM};
+  padding-left: ${PADDING.MD};
+  line-height: 1.5;
 `;
 
 export const Small = styled.small`
   font-size: ${FONT_SIZE.H6};
+  line-height: 2;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 `;
