@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import styled from "@emotion/styled";
-import { Container, Header, Footer, Main, Code } from "../styles/tags";
+import { Container, Header, Footer, Main, ALink, Small } from "../styles/html";
 
 const Tag = styled.span`
   font-size: 2rem;
@@ -14,13 +14,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Container>
       <Header>
-        <Tag>klldcll</Tag>
+        <Tag>HYESECH</Tag>
       </Header>
       <Main>
         <Component {...pageProps} />
       </Main>
       <Footer>
-        <Code>footer</Code>
+        <Small>LINK</Small>
+        <ALink href="https://github.com/hyesech">github</ALink>
+        <ALink href="https://hyesech.postype.com">postype</ALink>
+        <ALink href="https:/>/twitter.com/hyesech">twitter</ALink>
       </Footer>
     </Container>
   );

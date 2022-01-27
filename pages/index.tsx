@@ -1,9 +1,9 @@
-import { Article, Code } from "../styles/tags";
+import { Article, P } from "../styles/html";
 
 function IndexPage() {
   return (
     <Article>
-      <Code>index</Code>
+      <P>내용없음</P>
     </Article>
   );
 }
