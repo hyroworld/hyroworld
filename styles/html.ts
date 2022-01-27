@@ -98,6 +98,11 @@ export const Code = styled.code`
 export const P = styled.p`
   font-size: ${FONT_SIZE.H5};
   line-height: 1.5;
+
+  &::selection {
+    color: ${WHITE};
+    background-color: ${BLACK};
+  }
 `;
 
 export const DL = styled.dl``;
@@ -106,6 +111,10 @@ export const DT = styled.dt`
   font-size: ${FONT_SIZE.H3};
   font-weight: ${FONT_WEIGHT.BOLD};
   line-height: 1.5;
+
+  &::selection {
+    background-color: transparent;
+  }
 `;
 
 export const DD = styled.dd`
@@ -113,6 +122,11 @@ export const DD = styled.dd`
   margin-bottom: ${MARGIN.SM};
   padding-left: ${PADDING.MD};
   line-height: 1.5;
+
+  &::selection {
+    color: ${WHITE};
+    background-color: ${BLACK};
+  }
 `;
 
 export const Small = styled.small`
@@ -120,4 +134,8 @@ export const Small = styled.small`
   line-height: 2;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+
+  &::selection {
+    background-color: transparent;
+  }
 `;
