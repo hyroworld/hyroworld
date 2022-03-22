@@ -3,16 +3,16 @@ import { Article, DD, DL, DT, P } from "../styles/html";
 function IndexPage() {
   return (
     <Article>
-      <P>Cryptids of Cornwall:</P>
+      <P>???</P>
       <DL>
-        <DT>Beast of Bodmin</DT>
-        <DD>A large feline inhabiting Bodmin Moor.</DD>
+        <DT>Remember.</DT>
+        <DD>Everything begins with your stance.</DD>
 
-        <DT>Morgawr</DT>
-        <DD>A sea serpent.</DD>
+        <DT>A set of assembly line:</DT>
+        <DD>This place is so boring. Is anyone bring me home?</DD>
 
-        <DT>Owlman</DT>
-        <DD>A giant owl-like creature.</DD>
+        <DT>It takes two!</DT>
+        <DD>Red Dead Redemption</DD>
       </DL>
     </Article>
   );
